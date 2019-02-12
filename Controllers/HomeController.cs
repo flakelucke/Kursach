@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Kursach.Models;
+
 
 namespace Kursach.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly DataContext context;
+
+        public HomeController(DataContext ctx)
+         { context = ctx; }
         public IActionResult Index()
         {
             ViewBag.Message = "Sports Store App";
-            return View();
+            return View(context.Products.First());
         }
     }
 }

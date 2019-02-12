@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Kursach.Models
 {
     public class Product
