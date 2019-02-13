@@ -4,7 +4,7 @@ services:
   database:
     image: "microsoft/mssql-server-linux:latest"
     ports:
-      - 5100:1433
+      - 5101:1433
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=mySecret123

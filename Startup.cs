@@ -55,8 +55,7 @@ namespace Kursach
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
             });
-            SeedData.SeedDatabase(app.ApplicationServices
-            .GetRequiredService<DataContext>());
+
             app.UseSpa(spa =>
             {
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,

@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using Kursach.Models;
-namespace Kursach
+namespace Kursach.Models
 {
     public class SeedData
     {
@@ -47,7 +46,8 @@ namespace Kursach
                             Price = 48.95m,
                             Supplier = s1,
                             Ratings = new List<Rating> { new Rating { Stars = 2 }, new Rating { Stars = 5 } }
-                        }, new Product
+                        }, 
+                        new Product
                         {
                             Name = "Soccer Ball",
                             Description = "FIFA-approved size and weight",
@@ -55,7 +55,8 @@ namespace Kursach
                             Price = 19.50m,
                             Supplier = s2,
                             Ratings = new List<Rating> { new Rating { Stars = 1 }, new Rating { Stars = 3 } }
-                        }, new Product
+                        }, 
+                        new Product
                         {
                             Name = "Corner Flags",
                             Description = "Give your pitch a professional touch",
@@ -63,7 +64,8 @@ namespace Kursach
                             Price = 34.95m,
                             Supplier = s2,
                             Ratings = new List<Rating> { new Rating { Stars = 3 } }
-                        }, new Product
+                        }, 
+                        new Product
                         {
                             Name = "Stadium",
                             Description = "Flat-packed 35,000-seat stadium",
@@ -71,7 +73,8 @@ namespace Kursach
                             Price = 79500,
                             Supplier = s2,
                             Ratings = new List<Rating> { new Rating { Stars = 1 }, new Rating { Stars = 4 }, new Rating { Stars = 3 } }
-                        }, new Product
+                        }, 
+                        new Product
                         {
                             Name = "Thinking Cap",
                             Description = "Improve brain efficiency by 75%",
@@ -79,7 +82,8 @@ namespace Kursach
                             Price = 16,
                             Supplier = s3,
                             Ratings = new List<Rating> { new Rating { Stars = 5 }, new Rating { Stars = 4 } }
-                        }, new Product
+                        }, 
+                        new Product
                         {
                             Name = "Unsteady Chair",
                             Description = "Secretly give your opponent a disadvantage",
@@ -87,14 +91,16 @@ namespace Kursach
                             Price = 29.95m,
                             Supplier = s3,
                             Ratings = new List<Rating> { new Rating { Stars = 3 } }
-                        }, new Product
+                        }, 
+                        new Product
                         {
                             Name = "Human Chess Board",
                             Description = "A fun game for the family",
                             Category = "Chess",
                             Price = 75,
                             Supplier = s3
-                        }, new Product
+                        }, 
+                        new Product
                         {
                             Name = "Bling-Bling King",
                             Description = "Gold-plated, diamond-studded King",

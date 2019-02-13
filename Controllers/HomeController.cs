@@ -13,11 +13,12 @@ namespace Kursach.Controllers
         private readonly DataContext context;
 
         public HomeController(DataContext ctx)
-         { context = ctx; }
-        public IActionResult Index()
+        { context = ctx; }
+
+        [HttpGet("api/persons/{id}")]
+        public IActionResult Index(int id)
         {
-            ViewBag.Message = "Sports Store App";
-            return View(context.Products.First());
+            return Ok(context.Products.First());
         }
     }
 }
