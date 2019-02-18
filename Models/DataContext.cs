@@ -1,13 +1,14 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Kursach.Models.UsersModels;
 
 namespace Kursach.Models
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext 
     {
-        public DataContext(DbContextOptions<DataContext> opts) : base(opts) { }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Supplier> Suppliers { get; set; }
-        public DbSet<Rating> Ratings { get; set; }
-
+        public DataContext(DbContextOptions opts) : base(opts) {
+            
+         }
+         public DbSet<JobSeeker> JobSeekers { get; set; }
     }
 }
