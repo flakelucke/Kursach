@@ -18,7 +18,7 @@ namespace Kursach.Controllers
         [HttpGet("api/persons/{id}")]
         public IActionResult Index(int id)
         {
-            return Ok(context.Products.First());
+            return Ok();
         }
     }
 }
